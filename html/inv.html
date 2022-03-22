@@ -58,6 +58,132 @@
       </div>
     </nav>
 
+
+    <div class="container">
+      <div>
+        <div class="row justify-content-center">
+          <h3>Productos</h3>
+        </div>
+        <div class="row">
+          <select class="mx-2 my-2 form-select rounded" aria-label="Filtro">
+            <option selected  class="text-center">Filtros</option>
+            <option value="1" class="text-center">ID</option>
+            <option value="2" class="text-center">Producto</option>
+            <option value="3" class="text-center">Categoria</option>
+            <option value="4" class="text-center">Existencia</option>
+            <option value="5" class="text-center">Reorden</option>
+          </select>
+          <select class="mx-2 my-2 form-select rounded" aria-label="Almacen">
+            <option selected  class="text-center">Almacen</option>
+            <option value="1" class="text-center">Insurgentes #50</option>
+            <option value="2" class="text-center">Avasolo #115</option>
+            <option value="3" class="text-center">Av.America #38</option>
+          </select>
+          <a href="#" class="btn bg-primary text-white my-1 py-1 px-1">Aplicar</a>
+        </div>
+        <table class="table table-hover">
+        <thead>
+          <tr>
+           
+            <th scope="col">ID</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Existencia</th>
+            <th scope="col">Reorden</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-bs-toggle="collapse" href="#ID1" role="button" aria-expanded="false" aria-controls="ID1">
+            <th scope="row">1</th>
+            <td>Aceite</td>
+            <td>Despenza</td>
+            <td>25 Unit</td>
+            <td>10 Unit</td>
+          </tr>
+          <tr class="collapse" id="ID1">
+           <td class="border rounded" colspan="6">
+            
+              <div class="row mx-2">
+                <p>Que te gustaria hacer?</p>
+              </div>
+              <div class="row justify-content-between">
+                <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Compra</a>
+                <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Traspaso</a>
+                <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Ajuste</a>
+                <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Venta</a>
+            </div>
+    
+          </td>
+           </tr> <!-- Menu oculto -->
+          <tr class="bg-danger" data-bs-toggle="collapse" href="#ID2" role="button" aria-expanded="false" aria-controls="ID2">
+            <th scope="row">2</th>
+            <td>Leche</td>
+            <td>Despenza</td>
+            <td>9 Unit</td>
+            <td>10 Unit</td>
+          </tr>
+          <tr class="collapse" id="ID2">
+            <td class="border rounded" colspan="6">
+             
+               <div class="row mx-2">
+                 <p>Que te gustaria hacer?</p>
+               </div>
+               <div class="row justify-content-between">
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Compra</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Traspaso</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Ajuste</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Venta</a>
+             </div>
+     
+           </td>
+            </tr>
+          <tr data-bs-toggle="collapse" href="#ID3" role="button" aria-expanded="false" aria-controls="ID3">
+            <th scope="row">3</th>
+            <td>Jabon</td>
+            <td>Despenza</td>
+            <td>38 Unit</td>
+            <td>10 Unit</td>
+          </tr>
+          <tr class="collapse" id="ID3">
+            <td class="border rounded" colspan="6">
+             
+               <div class="row mx-2">
+                 <p>Que te gustaria hacer?</p>
+               </div>
+               <div class="row justify-content-between">
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Compra</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Traspaso</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Ajuste</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Venta</a>
+             </div>
+     
+           </td>
+            </tr>
+          <tr data-bs-toggle="collapse" href="#ID4" role="button" aria-expanded="false" aria-controls="ID4">
+            <th scope="row">4</th>
+            <td>Huevos</td>
+            <td>Despenza</td>
+            <td>25 kg</td>
+            <td>10 kg</td>
+          </tr>
+          <tr class="collapse" id="ID4">
+            <td class="border rounded" colspan="6">
+             
+               <div class="row mx-2">
+                 <p>Que te gustaria hacer?</p>
+               </div>
+               <div class="row justify-content-between">
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Compra</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Traspaso</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Ajuste</a>
+                 <a href="#" class="mx-2 mb-2 btn bg-primary text-white">Venta</a>
+             </div>
+     
+           </td>
+            </tr>
+        </tbody>
+      </table></div><!-- tabla -->
+    </div><!-- contenedor tabla productos-->
     
 
     <footer class="page-footer">
@@ -121,7 +247,7 @@
       </div> <!-- .container -->
     </footer> <!-- .page-footer -->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="../assets/js/jquery-3.5.1.min.js"></script>
 
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
