@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="/assets/css/loginstyle.css" />
+  </head>
+
+  <body class="bg-slate-100">
+    <div class="container ml-14 xl:pl-96 mt-64 xl:ml-44">
+      <div
+        class="bg-white w-full max-w-4xl grid grid-cols-3 gap-3 rounded-2xl overflow-hidden"
+      >
+        <div
+          id="formSignIN"
+          class="py-10 w-full col-span-2 col-start-1 row-start-1"
+        >
+          <!-- 482 h -->
+          <h1 class="text-3xl text-purple-500 font-bold text-center">
+            Ingresa en Northwind
+          </h1>
+          <div class="flex justify-center py-5">
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >f</a
+            >
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >G+</a
+            >
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >in</a
+            >
+          </div>
+          <div>
+            <p class="text-sm text-center text-slate-400 opacity-70">
+              O usa tu correo electronico:
+            </p>
+          </div>
+
+          <div class="my-5 flex justify-center">
+            <form class="">
+              <div class="bg-slate-50 my-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 absolute pt-2 stroke-slate-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <input
+                  class="border-0 bg-slate-50 w-80 placeholder-slate-400 ml-7 py-2 focus:ring-1 focus:ring-purple-500"
+                  placeholder="Correo"
+                  type="text"
+                />
+              </div>
+              <div class="bg-slate-50 my-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 absolute pt-2 stroke-slate-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+                <input
+                  class="border-0 bg-slate-50 w-80 placeholder-slate-400 ml-7 py-2 focus:ring-1 focus:ring-purple-500"
+                  placeholder="Contraseña"
+                  type="password"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="my-5">
+            <a
+              class="font-semibold text-sm text-slate-700 opacity-100 flex justify-center"
+              href="#"
+              >¿Olvidaste tu contraseña?</a
+            >
+            <div class="border w-40 m-auto"></div>
+          </div>
+
+          <div class="my-5 flex justify-center">
+            <button
+              class="bg-purple-500 hover:bg-purple-500 text-white py-2 px-16 rounded-full text-sm"
+              type="button"
+            >
+              Ingresa
+            </button>
+          </div>
+        </div>
+        <!--Inicio color blanco ^ -->
+        <div
+          id="formSignUP"
+          class="py-10 w-full col-span-2 col-start-2 row-start-1 translate-x-2/4 hidden"
+        >
+          <div>
+            <h1 class="text-3xl text-purple-500 font-bold text-center">
+              Crear cuenta
+            </h1>
+          </div>
+          <div class="flex justify-center py-5">
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >f</a
+            >
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >G+</a
+            >
+            <a
+              class="font-bold text-xl rounded-full border-2 w-10 h-10 text-center mx-3 pt-1 hover:border-purple-300"
+              href="#"
+              >in</a
+            >
+          </div>
+          <div>
+            <p class="text-sm text-center text-slate-400 opacity-70">
+              o usa tu correo para registrarte:
+            </p>
+          </div>
+          <div class="my-5 flex justify-center">
+            <form class="">
+              <div class="bg-slate-50 my-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 absolute pt-2 stroke-slate-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+                <input
+                  class="border-0 bg-slate-50 w-80 placeholder-slate-400 ml-7 py-2 focus:ring-1 focus:ring-purple-500"
+                  placeholder="Nombre"
+                  type="text"
+                />
+              </div>
+              <div class="bg-slate-50 my-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 absolute pt-2 stroke-slate-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <input
+                  class="border-0 bg-slate-50 w-80 placeholder-slate-400 ml-7 py-2 focus:ring-1 focus:ring-purple-500"
+                  placeholder="Correo"
+                  type="text"
+                />
+              </div>
+              <div class="bg-slate-50 my-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 absolute pt-2 stroke-slate-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+                <input
+                  class="border-0 bg-slate-50 w-80 placeholder-slate-400 ml-7 py-2 focus:ring-1 focus:ring-purple-500"
+                  placeholder="Contraseña"
+                  type="password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="my-5 flex justify-center">
+            <button
+              class="bg-purple-500 hover:bg-purple-500 text-white py-2 px-16 rounded-full text-sm"
+              type="button"
+            >
+              Registrarse
+            </button>
+          </div>
+        </div>
+        <!--Inicio color 2blanco ^ -->
+        <div
+          id="formVerde"
+          class="col-span-1 bg-gradient-to-tr from-purple-500 to-purple-600 col-start-3 row-start-1"
+        >
+          <div id="VHead1" class="flex justify-center mt-32">
+            <p class="font-semibold text-3xl text-slate-100">Hola, amigo!</p>
+          </div>
+          <div id="VHead2" class="my-5 text-slate-100 opacity-90 text-sm">
+            <p class="text-center">Forma parte de nosotros</p>
+            <p class="text-center">inicia una cuenta con nosotros</p>
+          </div>
+          <div class="mt-10 flex justify-center">
+            <button
+              id="btnSignUp"
+              class="hover:bg-purple-300 hover:text-slate-500 text-white py-3 px-16 rounded-full text-sm border"
+              type="button"
+            >
+              <p id="btnText">Registrarse</p>
+            </button>
+          </div>
+        </div>
+        <!-- ColorVerde ^ -->
+        <div
+          id="formVerde1"
+          class="col-span-1 bg-gradient-to-tr from-purple-500 to-purple-600 col-start-3 row-start-1 hIzq hidden"
+        >
+          <div id="VHead11" class="flex justify-center mt-32">
+            <p class="font-semibold text-3xl text-slate-100">Hola de nuevo!</p>
+          </div>
+          <div id="VHead21" class="my-5 text-slate-100 opacity-90 text-sm">
+            <p class="text-center">¿Ya tienes una cuenta?</p>
+            <p class="text-center">ingresa y accede a tu cuenta</p>
+          </div>
+          <div class="mt-10 flex justify-center">
+            <button
+              id="btnSignUp1"
+              class="hover:bg-purple-300 hover:text-slate-500 text-white py-3 px-16 rounded-full text-sm border"
+              type="button"
+            >
+              <p id="btnText1">Iniciar sesión</p>
+            </button>
+          </div>
+        </div>
+        <!-- Color2Verde ^ -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Container -->
+    <script src="/assets/js/loginscript.js"></script>
+  </body>
+</html>
