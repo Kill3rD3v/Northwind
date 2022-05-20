@@ -1,14 +1,26 @@
 $(document).ready(function () {
   //line chart
   google.charts.load("current", {
-    packages: ["corechart", "line", "controls", "table"],
+    packages: ["corechart", "bar", "table"],
   });
   google.charts.setOnLoadCallback(drawChartline);
 });
 
 function drawChartline() {
   var options = {
-    title: "top5",
+    title: "Top 5 Mejores Empleados",
+    width: "100%",
+    height: "100%",
+
+    showRowNumber: true,
+    legend: { position: "bottom" },
+    bar: { groupWidth: "80%", groupSpacing: "40%" },
+
+    animation: { duration: 1000, easing: "out" },
+    isStacked: true,
+  };
+  var option2 = {
+    title: "Top 5 Mejores Empleados",
     width: "100%",
     height: "100%",
     showRowNumber: true,
@@ -19,7 +31,7 @@ function drawChartline() {
 
   //json data ajax
   var jsondata = $.ajax({
-    url: "https://localhost:5001/api/Employees/top5",
+    url: "https://localhost:44379/api/Employees/top5",
     dataType: "json",
     async: false,
     success: function (data) {
@@ -35,12 +47,14 @@ function drawChartline() {
         data.setValue(i, 0, c[i].empleado);
         data.setValue(i, 1, c[i].ventas);
       }
-
-      visualDash = new google.visualization.Table(
+      datatable = new google.visualization.Table(
+        document.getElementById("datatable")
+      );
+      visualDash = new google.visualization.BarChart(
         document.getElementById("dashboard")
       );
       //visualization.draw(data, options);
-
+      datatable.draw(data, options);
       visualDash.draw(data, options);
     },
   }).responseText;
