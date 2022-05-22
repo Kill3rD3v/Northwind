@@ -73,14 +73,30 @@
 
 
 
-    <main>
+<!-- Container -->
+   
+
+<div style="">
+  <div style="margin-top: 2rem; margin: bottom 2rem ; font-family: sans-serif;"><h1><center>Reporte 3</Center></h1></div>
+    <div style="display:flex ; justify-content: space-between; margin-left: 30rem; margin-right: 30rem;">
+      <select name="Producto" id="cbProducto" style="width: auto;" onchange="google.charts.setOnLoadCallback(drawChartline);">
+    </select>
+    <input id="yearpick" type="number" min="1990" max="2022" step="1" value="1996" onchange="google.charts.setOnLoadCallback(drawChartline);" /> 
+    <select name="Producto" id="cbWarehouse" style="width: auto;" onchange="google.charts.setOnLoadCallback(drawChartline);">
+      <option value="1">Almacen 1</option>
+      <option value="2">Almacen 2</option>
+      <option value="3">Almacen 3</option>
+      <option value="4">Almacen 4</option>
+    </select>
+  </div>
+  <div style="display:flex; justify-content: center; margin-top:2rem ; margin-bottom: 2rem;">
+    <div id="dashboard" style="min-width: 80%; height: 600px; "></div>
+    <div id="datatable" style="object-fit:contain ;" ></div>
+  </div>
+</div>
 
 
-
-
-
-
-    </main>
+<!-- container -->
 
 
 
@@ -164,6 +180,15 @@
 
     <script src="../assets/js/theme.js"></script>
 
+
+    <script src="/assets/js/reporte3.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  
 </body>
 
 </html>
