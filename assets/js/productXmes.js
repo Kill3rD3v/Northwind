@@ -1,10 +1,14 @@
 $(document).ready(function () {
-  //line chart
+  obtenerProductos();
   google.charts.load("current", {
     packages: ["corechart", "bar", "table", "line"],
   });
+  setTimeout(function () {
+    $("#loading").fadeOut(300);
+  }, 5000);
+  //line chart
+
   google.charts.setOnLoadCallback(drawChartline);
-  obtenerProductos();
 });
 
 function drawChartline() {
@@ -43,8 +47,8 @@ function drawChartline() {
       c = jsondata;
 
       var data = new google.visualization.DataTable();
-      data.addColumn("string", "mes");
-      data.addColumn("number", "cantidad");
+      data.addColumn("string", "Mes");
+      data.addColumn("number", "Cantidad vendida");
       data.addRows(c.length);
       for (var i = 0; i < c.length; i++) {
         switch (c[i].mes) {

@@ -1,10 +1,16 @@
 $(document).ready(function () {
+  setTimeout(function () {
+    $("#loading").fadeOut(300);
+  }, 5000);
+
+  obtenerProductos();
+
   //line chart
   google.charts.load("current", {
     packages: ["corechart", "bar", "table", "line", "vegachart"],
   });
+
   google.charts.setOnLoadCallback(drawChartline);
-  obtenerProductos();
 });
 
 function drawChartline() {
@@ -12,12 +18,10 @@ function drawChartline() {
     title: "Productos Por Año",
     width: "100%",
     height: "100%",
-    VegaChart: { width: "100%", height: "100%", padding: "0" },
     showRowNumber: true,
     legend: { position: "bottom" },
-    bar: { groupWidth: "80%", groupSpacing: "40%" },
-
-    animation: { duration: 1000, easing: "out" },
+    bar: { groupWidth: "80%", groupSpacing: "30%" },
+    animation: { startup: true, duration: 1000, easing: "out" },
     isStacked: true,
   };
   var option2 = {
@@ -44,7 +48,7 @@ function drawChartline() {
       c = jsondata;
 
       var data = new google.visualization.DataTable();
-      data.addColumn("string", "mes");
+      data.addColumn("string", "Mes");
       data.addColumn("number", "$MXN");
       data.addRows(c.length);
       for (var i = 0; i < c.length; i++) {
@@ -105,9 +109,13 @@ function drawChartline() {
       visualDash = new google.visualization.ColumnChart(
         document.getElementById("dashboard")
       );
+      visualDash1 = new google.visualization.BarChart(
+        document.getElementById("dashboardmb")
+      );
       //visualization.draw(data, options);
       datatable.draw(data, options);
       visualDash.draw(data, options);
+      visualDash1.draw(data, options);
     },
   }).responseText;
 }
