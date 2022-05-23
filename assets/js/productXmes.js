@@ -21,7 +21,7 @@ function drawChartline() {
     legend: { position: "bottom" },
     bar: { groupWidth: "80%", groupSpacing: "40%" },
 
-    animation: { duration: 1000, easing: "out" },
+    animation: { startup: true, duration: 1000, easing: "out" },
     isStacked: true,
   };
   var option2 = {
